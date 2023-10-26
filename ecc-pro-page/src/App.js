@@ -9,7 +9,7 @@ export default function App() {
     <div className="main">
       <h3>
         hello, I am{" "}
-        <a href="https://beacons.ai/ecclessim" target="_blank">
+        <a href="https://beacons.ai/ecclessim" target="_blank" rel="noreferrer">
           eccles sim
         </a>{" "}
         😊
@@ -20,7 +20,6 @@ export default function App() {
           <strong>{currentCompany}</strong>
         </p>
       </div>
-      <h4 style={{ marginTop: "2rem" }}></h4>
     </div>
   );
 }
