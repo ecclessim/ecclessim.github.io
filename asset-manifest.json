@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ecc-pro-page/static/css/main.2919cb0a.css",
+    "main.js": "/ecc-pro-page/static/js/main.d5394d01.js",
+    "static/js/787.e2be8cf2.chunk.js": "/ecc-pro-page/static/js/787.e2be8cf2.chunk.js",
+    "index.html": "/ecc-pro-page/index.html",
+    "main.2919cb0a.css.map": "/ecc-pro-page/static/css/main.2919cb0a.css.map",
+    "main.d5394d01.js.map": "/ecc-pro-page/static/js/main.d5394d01.js.map",
+    "787.e2be8cf2.chunk.js.map": "/ecc-pro-page/static/js/787.e2be8cf2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2919cb0a.css",
+    "static/js/main.d5394d01.js"
+  ]
+}
