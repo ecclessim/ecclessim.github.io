@@ -10,14 +10,18 @@ body {
 }
 
 .main {
-  width: 400px;
+  width: 500px;
   height: 100%;
   margin: 0 auto;
   margin-top: 10rem;
 }
 
-.main p {
+p {
   color: #d4d4d4;
+}
+
+.section {
+  margin-top: 4rem;
 }
 
 strong {
@@ -26,7 +30,7 @@ strong {
 
 a {
   color: white;
-  text-decoration: none 0.15em rgba(0, 0, 0, 1);
+  text-decoration: none;
   text-underline-offset: 0.2rem;
   transition: text-underline-offset 500ms;
 }
@@ -34,4 +38,18 @@ a {
 a:hover {
   text-decoration: underline;
   text-underline-offset: 0.5rem;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(90, 90, 90);
+  border-radius: 10rem;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
 }
