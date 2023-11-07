@@ -5,7 +5,7 @@
 body {
   padding: 1rem;
   font-family: system-ui, sans-serif;
-  color: white;
+  color: #d4d4d4;
   background-color: #111010;
 }
 
@@ -13,31 +13,20 @@ body {
   max-width: 500px;
   height: 100%;
   margin: 0 auto;
-  margin-top: 10rem;
+  margin-top: 6rem;
 }
 
 p {
   color: #d4d4d4;
+  text-align: justify;
 }
 
 .section {
-  margin-top: 4rem;
-}
-
-strong {
-  color: paleturquoise;
+  margin-top: 3rem;
 }
 
 a {
-  color: white;
   text-decoration: none;
-  text-underline-offset: 0.2rem;
-  transition: text-underline-offset 500ms;
-}
-
-a:hover {
-  text-decoration: underline;
-  text-underline-offset: 0.5rem;
 }
 
 ::-webkit-scrollbar {

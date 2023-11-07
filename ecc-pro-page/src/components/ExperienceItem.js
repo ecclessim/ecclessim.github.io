@@ -12,15 +12,18 @@ export default function ExperienceItem({ experience }) {
           {experience.role} · {experience.companyName}
         </p>
         <p className="fs-6 fw-medium">{experience.team}</p>
-        <p className="fs-6 text-white-50">{experience.description}</p>
-        {experience.skills.map((s, i) => (
-          <span
-            key={i}
-            className="badge p-2 text-bg-dark me-2 text-info fw-medium"
-          >
-            {s}
-          </span>
-        ))}
+        {experience.description && (
+          <p className="fs-6 text-white-50">{experience.description}</p>
+        )}
+        {experience.skills &&
+          experience.skills.map((s, i) => (
+            <span
+              key={i}
+              className="badge p-2 text-bg-dark me-2 text-info fw-medium"
+            >
+              {s}
+            </span>
+          ))}
       </div>
     </div>
   );
