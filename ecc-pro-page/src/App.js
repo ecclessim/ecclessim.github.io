@@ -1,8 +1,9 @@
 import React from "react";
+import { FaDownload } from "react-icons/fa";
 import "./App.css";
 import ExperienceItem from "./components/ExperienceItem";
-import experienceData from "./static/resumeJson.json";
 import resumePdf from "./static/ecclesResume.pdf";
+import experienceData from "./static/resumeJson.json";
 
 export default function App() {
   const schoolExp = {
@@ -12,6 +13,7 @@ export default function App() {
     companyName: "nanyang technological university",
     team: "specialization in artificial intelligence",
   };
+
   return (
     <div className="main">
       <h3>
@@ -32,13 +34,16 @@ export default function App() {
           download my{" "}
           <strong>
             <a
-              className="text-info"
+              className="resume-link"
               href={resumePdf}
               target="_blank"
               rel="noreferrer"
             >
-              {" "}
-              &lt;resume&gt;
+              resume
+              <span>
+                {" "}
+                <FaDownload />
+              </span>
             </a>
           </strong>
         </p>
@@ -57,6 +62,25 @@ export default function App() {
           <ExperienceItem experience={schoolExp} />
         </div>
       </div>
+      <footer className="footer">
+        <p>© 2023 Eccles. All rights reserved.</p>
+        <div className="social-links">
+          <a
+            href="https://github.com/ecclessim"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+          </a>
+          <a
+            href="https://linkedin.com/in/ecclessim"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }

@@ -1,44 +1,117 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
-  padding: 1rem;
-  font-family: system-ui, sans-serif;
-  color: #d4d4d4;
-  background-color: #111010;
+  font-family: "Inter", system-ui, sans-serif; /* Use Inter or another modern font */
+  line-height: 1.6;
+}
+body {
+  background: linear-gradient(135deg, #061e1f, #180d2b);
 }
 
 .main {
-  max-width: 500px;
-  height: 100%;
+  max-width: 700px; /* Increase max-width */
+  padding: 2rem;
   margin: 0 auto;
-  margin-top: 6rem;
-}
-
-p {
-  color: #d4d4d4;
-  text-align: justify;
+  margin-top: 4rem;
 }
 
 .section {
-  margin-top: 3rem;
+  margin-top: 2.5rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05); /* Subtle background for sections */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+.section {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.section:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.section:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.resume-link {
+  display: inline-block;
+  padding: .5rem;
+  margin: .5rem;
+  background-color: #4dabf7;
+  color: #fff;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.resume-link:hover {
+  background-color: white;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #f5f5f5;
+}
+
+p {
+  font-size: 1rem;
+  color: #d4d4d4;
+  line-height: 1.6;
 }
 
 a {
+  color: #4dabf7; /* A softer blue for links */
+  transition: color 0.3s ease;
   text-decoration: none;
 }
 
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+a:hover {
+  color: #228be6; /* Darker blue on hover */
 }
 
-::-webkit-scrollbar-thumb {
-  background: rgba(90, 90, 90);
-  border-radius: 10rem;
+.footer {
+  margin-top: 4rem;
+  text-align: center;
+  color: #888;
 }
 
-::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.2);
+.social-links a {
+  margin: 0 0.5rem;
+  color: #4dabf7;
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h5 {
+    font-size: 1.25rem;
+  }
+
+  .section {
+    margin-top: 1.5rem;
+    padding: 1rem;
+  }
 }
