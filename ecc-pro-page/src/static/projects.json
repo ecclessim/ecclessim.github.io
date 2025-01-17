@@ -1,0 +1,26 @@
+[
+  {
+    "dateStart": "",
+    "dateEnd": "",
+    "role": "",
+    "companyName": "JournalBox",
+    "description": "An all-in-one space to build habits, jot down thoughts, and track progress—all in one place. Whether you’re crushing goals or reflecting on your day, simply write, rate your activity, and watch your journey unfold. Perfect for habit tracking, daily journaling, or just checking in with yourself. Small steps, big changes.",
+    "skills": ["NextJS", "TypeScript", "Vercel", "TailWindCSS"],
+    "hyperlink": "https://journalbox.vercel.app"
+  },
+  {
+    "dateStart": "",
+    "dateEnd": "",
+    "role": "",
+    "companyName": "MomoManager",
+    "description": "A mobile app that simplifies investing for beginners by combining deep reinforcement learning (PPO) and Modern Portfolio Theory (MPT). It analyzes your portfolio and suggests optimal stock allocations to maximize returns while managing risk. Built with Flutter and Dart, the app offers an intuitive interface, bringing expert-level investment analysis to amateur investors. Disclaimer: This is a proof of concept and not financial advice.",
+    "skills": [
+      "Flutter",
+      "Python",
+      "FireBase",
+      "Reinforcement Learning",
+      "Modern Portfolio Theory"
+    ],
+    "hyperlink": "https://github.com/ecclessim/fyp_flutter"
+  }
+]

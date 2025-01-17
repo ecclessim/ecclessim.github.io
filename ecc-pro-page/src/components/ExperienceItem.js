@@ -1,16 +1,29 @@
 export default function ExperienceItem({ experience }) {
   return (
     <div className="row">
-      <div className="col-md-4">
-        <p className="fs-6 fw-light text-left text-secondary">
-          {experience.dateStart.toLowerCase()} —{" "}
-          {experience.dateEnd.toLowerCase()}
-        </p>
-      </div>
+      {experience.dateStart && experience.dateEnd && (
+        <div className="col-md-4">
+          <p className="fw-bold text-left text-secondary" style={{fontSize:".875rem"}}>
+            {experience.dateStart.toLowerCase()} —{" "}
+            {experience.dateEnd.toLowerCase()}
+          </p>
+        </div>
+      )}
       <div className="col">
-        <p className="fs-6 fw-bold">
-          {experience.role} · {experience.companyName}
-        </p>
+        {experience.hyperlink ? (
+          <a
+            href={experience.hyperlink}
+            target="_blank"
+            rel="noreferrer"
+            className="fs-6 fw-bold"
+          >
+            {experience.companyName}
+          </a>
+        ) : (
+          <p className="fs-6 fw-bold">
+            {experience.role} {experience.role && "·"} {experience.companyName}
+          </p>
+        )}
         <p className="fs-6 fw-medium">{experience.team}</p>
         {experience.description && (
           <p className="fs-6 text-white-50">{experience.description}</p>
